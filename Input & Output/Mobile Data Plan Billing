@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        double cost = sc.nextDouble();
+        double gb=sc.nextDouble();
+        double rate=sc.nextDouble();
+        double tax=sc.nextDouble();
+       double extracost=gb*rate;
+       double totalcost=extracost+cost;
+        double totaltax=totalcost * tax/100.0;
+        double value=totalcost+totaltax;
+        System.out.printf("%.2f",value);
+        
+    }
+}
