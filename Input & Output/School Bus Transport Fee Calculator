@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int dis=sc.nextInt();
+        int rate=sc.nextInt();
+        int maintanance=sc.nextInt();
+        int allowance=sc.nextInt();
+        int subsidy=sc.nextInt();
+        int mul=dis*rate;
+        int add=mul+maintanance+allowance;
+        int sub=add-subsidy;
+       
+        System.out.println(sub);
+    }
+}
