@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        double bill=sc.nextInt();
+        double service=sc.nextInt();
+        double gst=sc.nextInt();
+        double no=sc.nextInt();
+        double totalservice=bill*service/100;
+        double totalgst=bill*gst/100;
+        double finalamt=totalgst+totalservice+bill;
+        double value=finalamt/no;
+        System.out.println(value);
+    }
+}
