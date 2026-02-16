@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int del=sc.nextInt();
+        int payout=sc.nextInt();
+        int incentive=sc.nextInt();
+        int fuelcost=sc.nextInt();
+        int mul=del*payout;
+        int add=mul+incentive;
+        int sub=add-fuelcost;
+       
+        System.out.println(sub);
+    }
+}
