@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int reg=sc.nextInt();
+        int broad=sc.nextInt();
+        int sp=sc.nextInt();
+        int price=sc.nextInt();
+         int rent=sc.nextInt();
+           int ad=sc.nextInt();
+        int add=reg+broad+sp;
+        int sub=add-price-rent-ad;
+       
+        System.out.println(sub);
+    }
+}
