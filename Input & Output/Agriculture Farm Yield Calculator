@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int yield=sc.nextInt();
+        int acres=sc.nextInt();
+        int extrayield=sc.nextInt();
+        int damaged=sc.nextInt();
+        int mul=yield*acres;
+        int add=mul+extrayield;
+        int sub=add-damaged;
+       
+        System.out.println(sub);
+    }
+}
