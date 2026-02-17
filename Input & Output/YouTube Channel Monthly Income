@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int ads=sc.nextInt();
+        int spons=sc.nextInt();
+        int aff=sc.nextInt();
+        int tax=sc.nextInt();
+         int pro=sc.nextInt();
+        int add=ads+spons+aff;;
+        int sub=add-tax-pro;
+       
+        System.out.println(sub);
+    }
+}
