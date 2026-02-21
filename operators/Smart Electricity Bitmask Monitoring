@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class SmartElectricityMonitoring {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int connectionValue = sc.nextInt();
+        int applianceMask = sc.nextInt();
+
+        int result = connectionValue & applianceMask;
+
+        if (result != 0) {
+            System.out.println("Appliance Active");
+        } else {
+            System.out.println("Appliance Inactive");
+        }
+
+        sc.close();
+    }
+}
